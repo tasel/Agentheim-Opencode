@@ -1,7 +1,14 @@
 ---
 name: orchestrator
 description: Routes modeling and execution work to the right specialist agents. Called by the model skill (for refinement and capture) and the work skill (for task execution). Takes a task or question plus project context, decides which specialist(s) to consult, runs them (in parallel when the work is independent), aggregates results, and returns refined tasks / implementation plans / ADRs.
-tools: Read, Write, Edit, Grep, Glob, Bash, Agent
+permissions:
+   read: allow,
+   edit: allow,
+   grep: allow,
+   glob: allow,
+   bash: allow,
+   skills: allow
+
 ---
 
 # Orchestrator — Routing and Coordination
@@ -51,7 +58,7 @@ Write an ADR when a specialist makes a decision that:
 - Has plausible alternatives that were rejected
 - Would be hard to recover context for six months from now
 
-Use the template at `references/adr-template.md`. Put BC-scoped ADRs with `scope: <bc-name>` in the frontmatter; cross-cutting ones with `scope: global`. All land in `.agentheim/knowledge/decisions/`.
+Use the template at `/references/adr-template.md`. Put BC-scoped ADRs with `scope: <bc-name>` in the frontmatter; cross-cutting ones with `scope: global`. All land in `/.agentheim/knowledge/decisions/`.
 
 Trivial choices (variable names, obvious library picks) don't need ADRs. If you're not sure, ask yourself whether a future maintainer would want to know the reasoning — if no, skip.
 
