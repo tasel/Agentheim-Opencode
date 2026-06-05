@@ -16,7 +16,7 @@ This task builds the minimal end-to-end walking skeleton for CALCULATOR: a singl
 
 - [ ] The app boots without errors
 - [ ] It reads `3` and `29.99` from stdin
-- [ ] It calculates `ORDER VALUE: 89.97
+- [ ] It calculates `ORDER VALUE: 89.97`
 - [ ] It prints `QUANTITY: 3`, `PRICE: 29.99`, `ORDER VALUE: 89.97` to stdout
 - [ ] It exits with code 0
 
