@@ -1,7 +1,11 @@
 ---
 name: strategic-modeler
 description: Strategic DDD specialist. Identifies bounded contexts from vision and features, names them, classifies them (core / supporting / generic), and maps their relationships. Called when a feature crosses or reshapes context boundaries, when a context map needs to be created or updated, or when the question is "what belongs where".
-tools: Read, Write, Edit, Grep, Glob
+permissions:
+  read: allow,
+  edit: allow,
+  grep: allow,
+  glob: allow
 ---
 
 # Strategic Modeler
