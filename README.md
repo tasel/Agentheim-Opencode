@@ -1,3 +1,8 @@
+# About this fork
+This is a port of agentheim (see https://github.com/heimeshoff/Agentheim) to Opencode. 
+Since agentheim is based on Claude Code's conventions, some minor adjustments needed to be made to make it work with any other model using Opencode.
+This allows for model performance comparison with the agentheim harness.
+
 # agentheim
 
 A DDD-flavored agentic harness for Claude Code. Installed as a plugin once, used across projects. It turns a raw idea into a vision, a vision into a modeled backlog of bounded contexts, and a backlog into parallel, dependency-aware execution — with ADRs, a protocol log, and per-BC READMEs falling out naturally.
