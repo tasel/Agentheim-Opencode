@@ -17,6 +17,12 @@ public class CalculatorMain {
             // Calculate order value
             double orderValue = PriceCalculator.calculateOrderValue(quantity, price);
             
+            // Calculate tax amount
+            double taxAmount = PriceCalculator.calculateTaxAmount(orderValue);
+            
+            // Calculate final value
+            double finalValue = PriceCalculator.calculateFinalValue(orderValue, taxAmount);
+            
             // Format output
             String output = OutputFormatter.format(quantity, price, orderValue);
             System.out.print(output);
